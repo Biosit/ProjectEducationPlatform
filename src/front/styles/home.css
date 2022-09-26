@@ -5,3 +5,26 @@
     one more css for each page that will contain the selected used 
     on that page only (the ones not reused in other pages).
 */
+
+header {
+  background: #441717;
+  min-height: 100px;
+}
+header p {
+  color: #7fffd4;
+  text-align: center;
+}
+
+footer {
+  background: #441717;
+  min-height: 100px;
+}
+footer p {
+  color: #7fffd4;
+  text-align: center;
+}
+#iconos i {
+  font-size: 26px;
+  padding: 0 8px;
+  color: #7fffd4;
+}
