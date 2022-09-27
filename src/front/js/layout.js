@@ -3,12 +3,14 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 
 import { Home } from "./pages/home";
-import { Demo } from "./pages/demo";
+import { Login } from "./pages/login";
 import { Single } from "./pages/single";
 import injectContext from "./store/appContext";
 
+import { Header } from "./component/header";
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
+import { Button } from "./component/button";
 
 //create your first component
 const Layout = () => {
@@ -20,18 +22,24 @@ const Layout = () => {
         <div>
             <BrowserRouter basename={basename}>
                 <ScrollToTop>
+                    <Header/>
                     <Navbar />
+                    <button />
                     <Routes>
                         <Route element={<Home />} path="/" />
-                        <Route element={<Demo />} path="/demo" />
+                        <Route element={<Login />} path="/login" />
                         <Route element={<Single />} path="/single/:theid" />
                         <Route element={<h1>Not found!</h1>} />
                     </Routes>
+                    <button />
                     <Footer />
                 </ScrollToTop>
             </BrowserRouter>
         </div>
     );
 };
+
+
+
 
 export default injectContext(Layout);
