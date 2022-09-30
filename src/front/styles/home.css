@@ -8,23 +8,43 @@
 
 header {
   background: #441717;
-  min-height: 100px;
+  min-height: 50px;
 }
 header p {
-  color: #7fffd4;
+  color: #bac4c0;
   text-align: center;
 }
 
+.carousel-inner {
+  /*max-height: 39rem !important;*/
+  max-height: 50rem !important;
+  /*height: 40%;
+  width: 100%;
+  align-content: center;*/
+}
+
+#contenedor-formulario {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #bac4c0;
+  border-radius: 5px;
+}
+
+#titulo-formulario {
+  color: #441717;
+}
 footer {
   background: #441717;
   min-height: 100px;
 }
 footer p {
-  color: #7fffd4;
+  color: #bac4c0;
   text-align: center;
 }
 #iconos i {
   font-size: 26px;
   padding: 0 8px;
-  color: #7fffd4;
+  color: #bac4c0;
 }
