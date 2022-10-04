@@ -37,17 +37,32 @@ export const Demo = () => {
 		
 
         <div className="col-auto">
-		<Link to="/">
+		<Link to="/admin">
 		  <button			
             type="submit"
-            className="bg-info btn btn-primary btn-lg">
-         INGRESAR
+            className="btn-outline-primary btn-sm">
+         ADMINISTRADOR
           </button>
 		  </Link>
+      <Link to="/teacher">
+		  <button			
+            type="submit"
+            className="btn-outline-primary btn-sm">
+         PROFESOR
+          </button>
+		  </Link>
+      <Link to="/student">
+		  <button			
+            type="submit"
+            className="btn-outline-primary btn-sm">
+         ESTUDIANTE
+          </button>
+		  </Link>
+
           <br></br>
           <br></br>
-          <Link to="/modal">
-            <span className="navbar-brand mb-0 h1 text-ligh ">
+          <Link to="/">
+            <span className="navbar-brand mb-0 h1 text-ligh btn-sm ">
               {" "}
               Olvidó su contraseña?
             </span>
@@ -57,10 +72,11 @@ export const Demo = () => {
 		  <br /> 
       <br />
       <Link to="/">
-        <button className="btn btn-primary align-items-left">REGRESAR</button>
+        <button className="btn btn-primary align-items-left btn-sm">REGRESAR</button>
       </Link>
 
         </div>
+       
       </div>
     </form>
   );
