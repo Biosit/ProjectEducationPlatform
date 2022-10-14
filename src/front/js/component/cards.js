@@ -10,7 +10,7 @@ export const Cards = () => {
         alt="..."
       />
       <div className=" card-body justify-content-center  ">
-        <h5 className="card-title justify-content-center ">BIENVENIDO</h5>
+        <h5 className="card-title justify-content-center "><b>BIENVENIDO</b></h5>
         <p className="card-text justify-content-center ">ESTUDIANTE</p>
       </div>
       <ul className="list-group list-group-flush">
@@ -20,7 +20,7 @@ export const Cards = () => {
       <div className="card-body justify-content-center">
         <Link to="/Demo">
           <button className="btn btn-outline-warning align-items-center">
-            CERRAR SESIÓN
+          <u>CERRAR SESIÓN</u>
           </button>
         </Link>
       </div>
