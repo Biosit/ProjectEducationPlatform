@@ -13,31 +13,34 @@ export const Teacher = () => {
           data-bs-toggle="dropdown"
           aria-expanded="false"
         >
-          ESTUDIANTES
+          <b>ESTUDIANTES</b>
         </button>
 
         <ul className="dropdown-menu">
+
+        <li>
+            <hr className="dropdown-divider" />
+          </li>
+          <li>
+            <hr className="dropdown-divider" />
+          </li>
+
           <li>
             <a className="dropdown-item" href="#">
-              REGISTRAR
+              <b><u>REGISTRAR CALIFICACIONES</u></b>
             </a>
           </li>
 
           <li>
             <a className="dropdown-item" href="#">
-              LEER
+              <b><u>VER CALIFICACIONES </u></b>
             </a>
           </li>
 
+          
           <li>
-            <a className="dropdown-item" href="#">
-              BORRAR
-            </a>
-          </li>
-
-          <li>
-            <a className="dropdown-item" href="#">
-              ACTUALIZAR
+            <a className="dropdown-item" href="#"><b><u>ACTUALIZAR CALIFICACIONES</u></b>
+              
             </a>
           </li>
 
@@ -46,10 +49,10 @@ export const Teacher = () => {
           </li>
 
           <li>
-            <a className="dropdown-item" href="#">
-              Separated link
-            </a>
+            <hr className="dropdown-divider" />
           </li>
+
+          
         </ul>
       </nav>
       <card className="col-3 d-flex flex-wrap ">

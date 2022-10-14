@@ -61,7 +61,7 @@ export const Demo = () => {
 
           <br></br>
           <br></br>
-          <Link to="/">
+          <Link to="/contrasena">
             <span className="navbar-brand mb-0 h1 text-ligh btn-sm ">
               {" "}
               Olvidó su contraseña?
