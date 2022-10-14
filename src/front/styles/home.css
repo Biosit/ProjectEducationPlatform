@@ -5,9 +5,14 @@
     one more css for each page that will contain the selected used 
     on that page only (the ones not reused in other pages).
 */
+/*
 header {
   background: #441717;
   min-height: 10px;
+
+header {
+  background: #441717;
+  min-height: 50px;
 }
 header p {
   color: #bac4c0;
@@ -31,11 +36,18 @@ nav span {
   align-content: center;
 }
 .carousel-inner {
-  /*max-height: 39rem !important;*/
+  max-height: 39rem !important;
   max-height: 49rem !important;
-  /*height: 40%;
+  height: 40%;
     width: 100%;
-    align-content: center;*/
+    align-content: center;
+
+.carousel-inner {
+  max-height: 39rem !important;
+  max-height: 50rem !important;
+  height: 40%;
+  width: 100%;
+  align-content: center;
 }
 
 #contenedor-formulario {
@@ -53,6 +65,7 @@ nav span {
 footer {
   background: #441717;
   min-height: 50px;
+  min-height: 100px;
 }
 footer p {
   color: #bac4c0;
@@ -63,3 +76,4 @@ footer p {
   padding: 0 8px;
   color: #bac4c0;
 }
+*/

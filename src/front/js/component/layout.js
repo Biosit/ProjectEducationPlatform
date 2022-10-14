@@ -3,18 +3,14 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 
 import { Home } from "./pages/home";
-import { Demo } from "./pages/demo";
-import { Admin } from "./pages/admin";
-import { Teacher } from "./pages/teacher";
-import { Student } from "./pages/student";
-
 import { Login } from "./pages/login";
 import { Single } from "./pages/single";
 import injectContext from "./store/appContext";
 
 import { Header } from "./component/header";
-
 import { Navbar } from "./component/navbar";
+import { Carousel } from "./component/carousel";
+import { Formulary } from "./component/formulary";
 import { Footer } from "./component/footer";
 import { Button } from "./component/button";
 
@@ -29,44 +25,22 @@ const Layout = () => {
       <BrowserRouter basename={basename}>
         <ScrollToTop>
           <Header />
+          <Navbar />
+          <Carousel />
+          <Formulary />
 
           <Routes>
             <Route element={<Home />} path="/" />
-            <Route element={<Demo />} path="/demo" />
-            <Route element={<Admin />} path="/admin" />
-            <Route element={<Teacher />} path="/teacher" />
-            <Route element={<Student />} path="/student" />
-
+            <Route element={<Login />} path="/login" />
             <Route element={<Single />} path="/single/:theid" />
             <Route element={<h1>Not found!</h1>} />
           </Routes>
+
           <Footer />
         </ScrollToTop>
       </BrowserRouter>
     </div>
   );
-    return (
-        <div>
-            <BrowserRouter basename={basename}>
-                <ScrollToTop>
-                    <Header/>
-                    <Navbar />
-                    <button />
-                    <Routes>
-                        <Route element={<Home />} path="/" />
-                        <Route element={<Login />} path="/login" />
-                        <Route element={<Single />} path="/single/:theid" />
-                        <Route element={<h1>Not found!</h1>} />
-                    </Routes>
-                    <button />
-                    <Footer />
-                </ScrollToTop>
-            </BrowserRouter>
-        </div>
-    );
 };
-
-
-
 
 export default injectContext(Layout);
