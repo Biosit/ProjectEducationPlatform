@@ -8,6 +8,7 @@ export const Home = () => {
   const { store, actions } = useContext(Context);
 
   return (
+    <>
       <Navbar />
 
       <div id="carousel" className="carousel slide" data-bs-ride="carousel">
@@ -61,7 +62,7 @@ export const Home = () => {
           <span className="visually-hidden">Next</span>
         </button>
       </div>
-    </>
+
     <div className="text-center mt-5">
       <h1>4-SCHOOL</h1>
       <p>
@@ -78,6 +79,6 @@ export const Home = () => {
         </a>
       </p>
     </div>
-
+    </>
   );
 };

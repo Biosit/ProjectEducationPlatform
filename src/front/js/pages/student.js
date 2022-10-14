@@ -17,10 +17,18 @@ export const Student = () => {
         </button>
 
         <ul className="dropdown-menu">
+
+        <li>
+            <hr className="dropdown-divider" />
+          </li>
           <li>
-            <a className="dropdown-item" href="#">
+            <hr className="dropdown-divider" />
+          </li>
+
+          <li>
+            <a className="dropdown-item" href="#"><b><u>
               REVISAR
-            </a>
+              </u></b></a>
           </li>
 
           <li>
@@ -28,9 +36,7 @@ export const Student = () => {
           </li>
 
           <li>
-            <a className="dropdown-item" href="#">
-              LLORAR
-            </a>
+            <hr className="dropdown-divider" />
           </li>
         </ul>
       </nav>
