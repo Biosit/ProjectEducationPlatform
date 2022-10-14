@@ -35,7 +35,7 @@ export const Admin = () => {
           </li>
           </Link>
 
-          <Link to="/registro">
+          <Link to="/consulta">
           <li>
             <a className="dropdown-item" href="#">
               <b>CONSULTAR</b>
@@ -97,7 +97,7 @@ export const Admin = () => {
             </li>
             </Link>
 
-            <Link to="/registro">
+            <Link to="/consulta">
           <li>
             <a className="dropdown-item" href="#">
               <b>CONSULTAR</b>

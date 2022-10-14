@@ -9,6 +9,7 @@ import { Teacher } from "./pages/teacher";
 import { Student } from "./pages/student";
 import { Registro } from "./pages/registro";
 import { Contrasena } from "./pages/contrasena";
+import { Consulta } from "./pages/consulta";
 
 import { Single } from "./pages/single";
 import injectContext from "./store/appContext";
@@ -37,6 +38,7 @@ const Layout = () => {
             <Route element={<Student />} path="/student" />
             <Route element={<Registro />} path="/registro" />
             <Route element={<Contrasena />} path="/contrasena" />
+            <Route element={<Consulta />} path="/consulta" />
 
             <Route element={<Single />} path="/single/:theid" />
             <Route element={<h1>Not found!</h1>} />
