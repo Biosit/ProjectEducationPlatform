@@ -6,7 +6,7 @@ export const Navbar = () => {
 	return (
 		<nav className="navbar navbar-light ">
 			<div className="container">
-			<div class="col align-self-center">
+			<div className="col align-self-center">
 				<Link to="/demo">
 					<span className="navbar-brand mb-0 h1 text-light mb-3 p-2 fs-3 ">INGRESAR</span>
 					
