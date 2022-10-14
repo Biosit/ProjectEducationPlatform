@@ -7,16 +7,15 @@ import { Demo } from "./pages/demo";
 import { Admin } from "./pages/admin";
 import { Teacher } from "./pages/teacher";
 import { Student } from "./pages/student";
+import { Registro } from "./pages/registro";
+import { Contrasena } from "./pages/contrasena";
 
-import { Login } from "./pages/login";
 import { Single } from "./pages/single";
 import injectContext from "./store/appContext";
 
 import { Header } from "./component/header";
 
-import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
-import { Button } from "./component/button";
 
 //create your first component
 const Layout = () => {
@@ -36,6 +35,8 @@ const Layout = () => {
             <Route element={<Admin />} path="/admin" />
             <Route element={<Teacher />} path="/teacher" />
             <Route element={<Student />} path="/student" />
+            <Route element={<Registro />} path="/registro" />
+            <Route element={<Contrasena />} path="/contrasena" />
 
             <Route element={<Single />} path="/single/:theid" />
             <Route element={<h1>Not found!</h1>} />
@@ -45,28 +46,6 @@ const Layout = () => {
       </BrowserRouter>
     </div>
   );
-    return (
-        <div>
-            <BrowserRouter basename={basename}>
-                <ScrollToTop>
-                    <Header/>
-                    <Navbar />
-                    <button />
-                    <Routes>
-                        <Route element={<Home />} path="/" />
-                        <Route element={<Login />} path="/login" />
-                        <Route element={<Single />} path="/single/:theid" />
-                        <Route element={<h1>Not found!</h1>} />
-                    </Routes>
-                    <button />
-                    <Footer />
-                </ScrollToTop>
-            </BrowserRouter>
-        </div>
-    );
 };
-
-
-
 
 export default injectContext(Layout);
