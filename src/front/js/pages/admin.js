@@ -1,5 +1,6 @@
 import React from "react";
 import "../../styles/home.css";
+import { Link } from "react-router-dom";
 
 import { Card } from "../component/card";
 
@@ -17,39 +18,56 @@ export const Admin = () => {
         </button>
 
         <ul className="dropdown-menu">
-          <li>
-            <a className="dropdown-item" href="#">
-              REGISTRAR
-            </a>
-          </li>
 
-          <li>
-            <a className="dropdown-item" href="#">
-              LEER
-            </a>
-          </li>
-
-          <li>
-            <a className="dropdown-item" href="#">
-              BORRAR
-            </a>
-          </li>
-
-          <li>
-            <a className="dropdown-item" href="#">
-              ACTUALIZAR
-            </a>
+        <li>
+            <hr className="dropdown-divider" />
           </li>
 
           <li>
             <hr className="dropdown-divider" />
           </li>
 
+        <Link to="/registro">
           <li>
             <a className="dropdown-item" href="#">
-              Separated link
+              <b>CREAR</b>
             </a>
           </li>
+          </Link>
+
+          <Link to="/registro">
+          <li>
+            <a className="dropdown-item" href="#">
+              <b>CONSULTAR</b>
+            </a>
+          </li>
+          </Link>
+
+          <Link to="/registro">
+          <li>
+            <a className="dropdown-item" href="#">
+              <b>BORRAR</b>
+            </a>
+          </li>
+          </Link>
+
+          <Link to="/registro">
+          <li>
+            <a className="dropdown-item" href="#">
+              <b>ACTUALIZAR</b>
+            </a>
+          </li>
+          </Link>
+
+          <li>
+            <hr className="dropdown-divider" />
+          </li>
+
+          <li>
+            <hr className="dropdown-divider" />
+          </li>
+
+          
         </ul>
 
         <button
@@ -61,43 +79,62 @@ export const Admin = () => {
           ESTUDIANTES
         </button>
 
+        
         <ul className="dropdown-menu">
-          <li>
-            <a className="dropdown-item" href="#">
-              REGISTRAR
-            </a>
+
+        <li>
+            <hr className="dropdown-divider" />
           </li>
 
           <li>
-            <a className="dropdown-item" href="#">
-              LEER
-            </a>
+            <hr className="dropdown-divider" />
           </li>
-
+        <Link to="/registro">
           <li>
             <a className="dropdown-item" href="#">
-              BORRAR
+              <b>CREAR</b>
             </a>
-          </li>
+            </li>
+            </Link>
 
+            <Link to="/registro">
           <li>
             <a className="dropdown-item" href="#">
-              ACTUALIZAR
+              <b>CONSULTAR</b>
             </a>
           </li>
+          </Link>
+
+          <Link to="/registro">
+          <li>
+            <a className="dropdown-item" href="#">
+              <b>BORRAR</b>
+            </a>
+          </li>
+          </Link>
+
+          <Link to="/registro">
+          <li>
+            <a className="dropdown-item" href="#">
+              <b>ACTUALIZAR</b>
+            </a>
+          </li>
+          </Link>
 
           <li>
             <hr className="dropdown-divider" />
           </li>
 
           <li>
-            <a className="dropdown-item" href="#">
-              Separated link
-            </a>
+            <hr className="dropdown-divider" />
           </li>
+
+
+          
         </ul>
       </nav>
-      <card className="col-3 d-flex flex-wrap ">
+      <card className="
+       d-flex flex-wrap ">
         <Card />
       </card>
     </div>
