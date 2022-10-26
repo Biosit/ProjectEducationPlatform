@@ -6,7 +6,7 @@ export const Cardt = () => {
     <div className="card" style={{ width: "8 rem" }}>
       <img
         src="https://img2.freepng.es/20180424/sce/kisspng-professor-computer-icons-education-school-professor-vector-5adfdb99b400b5.5337656915246201857373.jpg"
-        className="card-img-top"
+        className="card-img-top perfil"
         alt="..."
       />
       <div className=" card-body justify-content-center  ">

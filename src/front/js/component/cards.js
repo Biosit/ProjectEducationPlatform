@@ -6,7 +6,7 @@ export const Cards = () => {
     <div className="card" style={{ width: "8 rem" }}>
       <img
         src="https://e7.pngegg.com/pngimages/768/360/png-clipart-academic-degree-master-s-degree-bachelor-s-degree-teacher-education-teacher-logo-graduation-ceremony.png"
-        className="card-img-top"
+        className="card-img-top perfil"
         alt="..."
       />
       <div className=" card-body justify-content-center  ">

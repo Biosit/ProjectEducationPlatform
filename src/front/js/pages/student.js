@@ -5,7 +5,7 @@ import { Cards } from "../component/cards";
 
 export const Student = () => {
   return (
-    <div className=" container-fluid row-12 p-5 btn-group">
+    <div className=" d-flex justify-content-between container-fluid row-12 p-5 btn-group">
       <nav clasName="navbar">
         <button
           type="button"

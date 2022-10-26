@@ -6,7 +6,7 @@ import { Card } from "../component/card";
 
 export const Admin = () => {
   return (
-    <div className=" container-fluid row-12 p-5 btn-group">
+    <div className=" d-flex justify-content-between container-fluid row-12 p-5 btn-group">
       <nav clasName="navbar">
         <button
           type="button"
@@ -133,8 +133,7 @@ export const Admin = () => {
           
         </ul>
       </nav>
-      <card className="
-       d-flex flex-wrap ">
+      <card className=" d-flex flex-wrap ">
         <Card />
       </card>
     </div>
